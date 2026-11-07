@@ -9,17 +9,32 @@ permalink: /timeline/
   <p class="intro">The work, the learning, and the steps in between.</p>
 </section>
 <section class="section timeline">
+  <ul class="journey-key">
+    <li data-kind="work"><i></i>Work</li>
+    <li data-kind="education"><i></i>Education</li>
+    <li data-kind="project"><i></i>Project</li>
+    <li data-kind="publication"><i></i>Publication</li>
+  </ul>
   {% assign entries = site.data.timeline | sort: "sort" | reverse %}
   {% for entry in entries %}
-  <article class="timeline-row" data-when="{{ entry.when }}">
-    <p class="eyebrow">{{ entry.when }}</p>
-    <div>
+  <article class="timeline-row" data-when="{{ entry.when }}" data-kind="{{ entry.kind }}">
+    <div class="timeline-card">
+      <p class="eyebrow">{{ entry.when }}</p>
+      <p class="kind">
+        {% case entry.kind %}
+        {% when "work" %}Work
+        {% when "education" %}Education
+        {% when "project" %}Project
+        {% when "publication" %}Publication
+        {% endcase %}
+      </p>
       <h3>{{ entry.title }}</h3>
       {% if entry.detail != "" %}<p>{{ entry.detail }}</p>{% endif %}
       {% if entry.project != "" %}
       <a class="text-link" href="{{ site.baseurl }}/projects/{{ entry.project }}/">Explore the research ↗</a>
       {% endif %}
     </div>
+    <span class="spine" aria-hidden="true"></span>
   </article>
   {% endfor %}
 </section>

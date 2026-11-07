@@ -1,90 +1,108 @@
 - sort: "9999-12-31"
   when: "November 2025–present"
   title: "Applied Scientist, Wolt, Helsinki"
-  detail: "Detects the language of support messages. Translates support messages. Analyses the sentiment of support messages with an LLM. Assesses and coaches support agents."
+  detail: "Language detection for support messages. Translation of support messages. Sentiment analysis of support messages with an LLM. Assessment and coaching for support agents."
   project: ""
+  kind: work
 - sort: "2026-11-03"
   when: "3 November 2026"
   title: "Empirical Software Engineering paper"
   detail: ""
   project: llm-multi-agent-systems
+  kind: publication
 - sort: "2026-06-01"
   when: "June 2026"
   title: "Journal of Systems and Software paper"
   detail: ""
   project: malicious-pypi
+  kind: publication
 - sort: "2025-11-30"
   when: "May 2025–November 2025"
   title: "Applied Science Intern, Conversational AI, Wolt, Helsinki"
   detail: "Built evaluation tooling for intent capture in customer-support conversations."
   project: ""
+  kind: work
 - sort: "2025-09-12"
   when: "10–12 September 2025"
   title: "Quality by Prompt, SEAA, Salerno"
   detail: ""
   project: quality-by-prompt
+  kind: publication
 - sort: "2025-09-10"
   when: "10 September 2025"
   title: "Gearbox paper, ETFA, Porto"
   detail: ""
   project: gearbox-sound
+  kind: publication
 - sort: "2025-07-31"
   when: "August 2023–July 2025"
   title: "EDISS double master’s, Åbo Akademi and the University of L’Aquila"
   detail: "Master’s thesis: Large Language Models based Multi-Agent Systems for Detecting Malicious PyPI Packages."
   project: ""
+  kind: education
 - sort: "2025-06-20"
   when: "17–20 June 2025"
   title: "EASE paper, Istanbul"
   detail: ""
   project: malicious-pypi
+  kind: publication
 - sort: "2025-04-30"
   when: "September 2024–April 2025"
   title: "Technical Support Engineer, Data Services, Zoined, Finland"
   detail: "Investigated data discrepancies so customer reporting dashboards stayed accurate."
   project: ""
+  kind: work
 - sort: "2024-12-31"
   when: "September 2024–December 2024"
   title: "Teaching assistant, data science, Åbo Akademi"
   detail: "Assisted students with data science concepts through tutorials."
   project: ""
+  kind: work
 - sort: "2024-09-30"
   when: "June 2024–September 2024"
   title: "Technology trainee, Zoined, Finland"
   detail: "Built a customer-support chatbot with retrieval-augmented generation and maintained its knowledge base."
   project: ""
+  kind: work
 - sort: "2024-08-31"
   when: "March 2024–August 2024"
   title: "Tutor, Åbo Akademi, Turku"
   detail: "Supported international master’s students settling into academic life in Finland."
   project: ""
+  kind: work
 - sort: "2023-08-31"
   when: "May 2022–August 2023"
   title: "Data Engineer, Standard Bank Group, Lagos"
   detail: "Built pipelines that carried transactional data into the warehouse for financial reporting."
   project: ""
+  kind: work
 - sort: "2022-04-30"
   when: "September 2020–April 2022"
   title: "Technology Incident Manager, Standard Bank Group"
   detail: "Coordinated incident response across business-critical systems."
   project: ""
+  kind: work
 - sort: "2020-12-31"
   when: "2020"
   title: "University websites paper, IGI Global"
   detail: ""
   project: website-usability
+  kind: publication
 - sort: "2020-02-29"
   when: "April 2019–February 2020"
   title: "Website and application support intern, University of Jos"
   detail: "Supported the university Moodle platform and e-examinations."
   project: ""
+  kind: work
 - sort: "2018-10-31"
   when: "March 2014–October 2018"
   title: "B.Tech, Computer Science, Federal University of Technology Minna"
   detail: "Thesis on the usability of Nigerian university websites."
   project: ""
+  kind: education
 - sort: "2017-10-31"
   when: "April 2017–October 2017"
   title: "Student intern, Ahmadu Bello University, Zaria"
   detail: ""
   project: ""
+  kind: work

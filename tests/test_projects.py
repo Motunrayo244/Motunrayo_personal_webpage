@@ -27,7 +27,12 @@ EXPECTED = {
         "https://link.springer.com/article/10.1007/s10664-026-10955-8",
         "Metagente software engineering scenario",
     ],
-    "water-network": ["water distribution network", "https://github.com/Motunrayo244/SE4IoT_water_distribution_network"],
+    "water-network": [
+        "water distribution network",
+        "https://github.com/Motunrayo244/SE4IoT_water_distribution_network",
+        "InfluxDB",
+        "Telegram",
+    ],
     "gearbox-sound": [
         "10 September 2025",
         "https://ieeexplore.ieee.org/abstract/document/11205565",

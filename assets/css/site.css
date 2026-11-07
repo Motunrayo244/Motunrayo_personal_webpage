@@ -4,3 +4,24 @@
 .abstracts{margin-top:36px}.abstracts article{margin:0 0 28px}.abstracts h3{font-size:18px;font-weight:500;letter-spacing:-.4px;line-height:1.35;margin:0}.abstracts h3 a:hover{color:var(--accent)}.abstracts .eyebrow{display:block;margin-top:8px}.abstracts p{font-size:14px;color:var(--muted);margin:8px 0 0}
 
 .project-video{margin:36px 0 0}.project-video iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:18px;background:#dfe6f4}.project-description{font-size:15px;line-height:1.7;color:var(--muted);margin:16px 0 0}
+
+.journey-key{display:flex;flex-wrap:wrap;gap:10px 22px;list-style:none;margin:0 0 36px;padding:0}
+.journey-key li{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.4px}
+.journey-key i{width:9px;height:9px;border-radius:50%;background:var(--kind)}
+.journey-key [data-kind="work"],.timeline-row[data-kind="work"]{--kind:#4359bd}
+.journey-key [data-kind="education"],.timeline-row[data-kind="education"]{--kind:#2f6d57}
+.journey-key [data-kind="project"],.timeline-row[data-kind="project"]{--kind:#8a6232}
+.journey-key [data-kind="publication"],.timeline-row[data-kind="publication"]{--kind:#6a4c8a}
+.timeline .timeline-row{grid-template-columns:1fr 28px 1fr;gap:0 8px;align-items:start;border-top:0;padding:6px 0 26px}
+.timeline .timeline-card{grid-row:1}
+.timeline-row[data-kind="work"] .timeline-card{grid-column:1;text-align:right;border-right:3px solid var(--kind);padding-right:22px}
+.timeline-row[data-kind="education"] .timeline-card,.timeline-row[data-kind="project"] .timeline-card,.timeline-row[data-kind="publication"] .timeline-card{grid-column:3;border-left:3px solid var(--kind);padding-left:22px}
+.timeline .spine{grid-column:2;grid-row:1;position:relative;min-height:100%;align-self:stretch}
+.timeline .spine:before{content:"";position:absolute;left:50%;top:-6px;bottom:-26px;width:1px;background:var(--line)}
+.timeline .spine:after{content:"";position:absolute;left:50%;top:16px;width:11px;height:11px;border-radius:50%;background:var(--kind);transform:translateX(-50%)}
+.timeline-row p.kind{margin:8px 0 4px;font-size:10px;font-weight:600;letter-spacing:1.6px;text-transform:uppercase;color:var(--kind)}
+@media(max-width:600px){
+.timeline .timeline-row{grid-template-columns:16px 1fr;gap:0 14px}
+.timeline-row[data-kind="work"] .timeline-card,.timeline-row[data-kind="education"] .timeline-card,.timeline-row[data-kind="project"] .timeline-card,.timeline-row[data-kind="publication"] .timeline-card{grid-column:2;text-align:left;border-right:0;border-left:3px solid var(--kind);padding-right:0;padding-left:16px}
+.timeline .spine{grid-column:1}
+}

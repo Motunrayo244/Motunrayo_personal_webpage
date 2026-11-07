@@ -62,6 +62,9 @@
   symbol: "⌁"
   caption: "Connected by design."
   summary: "A proposed IoT system for monitoring a water distribution network in an urban area."
+  description:
+    - "Water-network monitoring is a proposed IoT system for an urban water distribution network. Simulated tank and pipeline sensors publish a reading every 10 seconds over MQTT. Node-RED writes those readings into InfluxDB, and Grafana shows them on a dashboard. Areas, tanks, and pipelines come from a configuration file, or from a small map editor. The sample network is set in L'Aquila."
+    - "A tank reports oxidation-reduction potential, pH, salinity, water depth, turbidity, and temperature. Its inlet and outlet flow change the water depth, and a detected impurity sets the inlet to high. A pipeline reports flow in feet per second, and it carries pH and salinity from its tank, drifting further when the flow is low. Node-RED checks the latest readings against fixed bands and sends a Telegram message, grouped by area, when a value sits outside its band."
   links:
     - label: Repository
       url: "https://github.com/Motunrayo244/SE4IoT_water_distribution_network"
