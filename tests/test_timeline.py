@@ -48,6 +48,8 @@ class TimelineTest(unittest.TestCase):
         parser = WhenParser()
         parser.feed(html)
         self.assertEqual(parser.values, WHEN)
+        self.assertIn("Erasmus Mundus scholarship for the EDISS master’s.", html)
+        self.assertIn("MTN Foundation scholarship. NNPC/Addax scholarship.", html)
         self.assertIn("Language detection for support messages.", html)
         self.assertIn("Assessment and coaching for support agents.", html)
         self.assertIn('data-kind="work"', html)
