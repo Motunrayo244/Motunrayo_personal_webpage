@@ -39,7 +39,12 @@ EXPECTED = {
         "https://www.youtube.com/embed/cC3kg6nT_1A",
         "MAPE-K loop",
     ],
-    "website-usability": ["Nigerian University Websites", "https://github.com/Motunrayo244/Website_Usability"],
+    "website-usability": [
+        "Nigerian University Websites",
+        "https://github.com/Motunrayo244/Website_Usability",
+        "https://doi.org/10.4018/978-1-7998-1279-1.ch012",
+        "SNECAAS",
+    ],
 }
 
 

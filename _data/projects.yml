@@ -103,6 +103,13 @@
   symbol: "↗"
   caption: "Built around people."
   summary: "Undergraduate thesis, “Evaluation of the Usability of Nigerian University Websites using Datamining algorithms.”"
+  papers:
+    - title: "A Human-Centered Usability Evaluation of University Websites Using SNECAAS Model"
+      venue: "IGI Global, 2020"
+      url: "https://doi.org/10.4018/978-1-7998-1279-1.ch012"
+      abstract: "One of the ways universities ensure constant touch with the human populace is through their websites. Therefore, websites must be engaging, interactive, easy-to-use, and provide users with the necessary information needed. Unfortunately, most universities have found this objective quite difficult to achieve. This chapter presents an evaluation the usability of six Nigerian university websites using a model which is based on seven usability criteria of speed, ease of use, navigation, content, aesthetic, accessibility, and security. The best six university websites based on webometric ranking were selected for the study with 233 participants via an online questionnaire using Google Docs. The overall results of the evaluation indicate that the usability of Nigerian university websites performed fairly well in ease of use, navigation, and aesthetic, averagely on speed and content, while the ratings based on accessibility and security are not very satisfactory."
   links:
     - label: Repository
       url: "https://github.com/Motunrayo244/Website_Usability"
+    - label: SNECAAS chapter
+      url: "https://doi.org/10.4018/978-1-7998-1279-1.ch012"

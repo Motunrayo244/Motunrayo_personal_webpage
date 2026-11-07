@@ -22,6 +22,7 @@ WHEN = [
     "March 2024–August 2024",
     "May 2022–August 2023",
     "September 2020–April 2022",
+    "2020",
     "April 2019–February 2020",
     "March 2014–October 2018",
     "April 2017–October 2017",
