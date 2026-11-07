@@ -13,12 +13,14 @@ class BlogTest(unittest.TestCase):
         build_site()
         html = (ROOT / "_site" / "blog" / "index.html").read_text()
         titles = [
+            "From Nigeria to Europe: An Erasmus Mundus Scholar’s Journey in EDISS",
             "Web scraping on your Computer",
             "Tales of an ML Engineer Wannabe: Network Analysis",
             "Data Engineering Zoomcamp Notebook",
         ]
         positions = [html.index(title) for title in titles]
         self.assertEqual(positions, sorted(positions))
+        self.assertIn("https://www.master-ediss.eu/from-nigeria-to-europe-an-erasmus-mundus-scholars-journey-in-ediss/", html)
         self.assertIn("https://www.youtube.com/watch?v=Q4nkyC-BZ1o", html)
         self.assertIn("https://www.linkedin.com/in/motunrayoibiyo/recent-activity/articles/", html)
         self.assertIn("https://www.linkedin.com/pulse/data-engineering-zoomcamp-notebook-motunrayo-ibiyo", html)

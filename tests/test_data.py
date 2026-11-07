@@ -64,6 +64,7 @@ class DataTest(unittest.TestCase):
         self.assertEqual(
             titles,
             [
+                "From Nigeria to Europe: An Erasmus Mundus Scholar’s Journey in EDISS",
                 "Web scraping on your Computer",
                 "Tales of an ML Engineer Wannabe: Network Analysis",
                 "Data Engineering Zoomcamp Notebook",

@@ -13,6 +13,7 @@ EXPECTED = {
         "https://github.com/Motunrayo244/MA-MPD-experiment-report",
         "https://doi.org/10.1145/3756681.3757042",
         "https://doi.org/10.1016/j.jss.2026.112792",
+        "https://www.doria.fi/handle/10024/193115",
         "few-shot learning is more effective",
         "This paper presents LAMPS",
     ],

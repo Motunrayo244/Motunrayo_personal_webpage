@@ -20,6 +20,8 @@
 .timeline .spine:before{content:"";position:absolute;left:50%;top:-6px;bottom:-26px;width:1px;background:var(--line)}
 .timeline .spine:after{content:"";position:absolute;left:50%;top:16px;width:11px;height:11px;border-radius:50%;background:var(--kind);transform:translateX(-50%)}
 .timeline-row p.kind{margin:8px 0 4px;font-size:10px;font-weight:600;letter-spacing:1.6px;text-transform:uppercase;color:var(--kind)}
+.timeline-links{display:flex;flex-wrap:wrap;gap:10px 16px;margin-top:12px}
+.timeline-row[data-kind="work"] .timeline-links{justify-content:flex-end}
 @media(max-width:600px){
 .timeline .timeline-row{grid-template-columns:16px 1fr;gap:0 14px}
 .timeline-row[data-kind="work"] .timeline-card,.timeline-row[data-kind="education"] .timeline-card,.timeline-row[data-kind="project"] .timeline-card,.timeline-row[data-kind="publication"] .timeline-card{grid-column:2;text-align:left;border-right:0;border-left:3px solid var(--kind);padding-right:0;padding-left:16px}

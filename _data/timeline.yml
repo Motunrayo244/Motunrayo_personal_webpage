@@ -40,6 +40,11 @@
   detail: "Erasmus Mundus scholarship for the EDISS master’s. Master’s thesis: Large Language Models based Multi-Agent Systems for Detecting Malicious PyPI Packages."
   project: ""
   kind: education
+  links:
+    - label: "Master’s thesis"
+      url: "https://www.doria.fi/handle/10024/193115"
+    - label: "EDISS journey"
+      url: "https://www.master-ediss.eu/from-nigeria-to-europe-an-erasmus-mundus-scholars-journey-in-ediss/"
 - sort: "2025-06-20"
   when: "17–20 June 2025"
   title: "EASE paper, Istanbul"

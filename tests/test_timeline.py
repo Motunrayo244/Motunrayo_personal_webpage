@@ -49,6 +49,8 @@ class TimelineTest(unittest.TestCase):
         parser.feed(html)
         self.assertEqual(parser.values, WHEN)
         self.assertIn("Erasmus Mundus scholarship for the EDISS master’s.", html)
+        self.assertIn("https://www.doria.fi/handle/10024/193115", html)
+        self.assertIn("https://www.master-ediss.eu/from-nigeria-to-europe-an-erasmus-mundus-scholars-journey-in-ediss/", html)
         self.assertIn("MTN Foundation scholarship. NNPC/Addax scholarship.", html)
         self.assertIn("Language detection for support messages.", html)
         self.assertIn("Assessment and coaching for support agents.", html)
