@@ -1,0 +1,108 @@
+- slug: malicious-pypi
+  title: Malicious PyPI package detection
+  group: research
+  field: Security & AI
+  symbol: "⌘"
+  caption: "Signals. Patterns. Protection."
+  summary: "Large language models and a multi-agent system for detecting malicious PyPI packages, including the master’s thesis, an EASE 2025 paper, and a Journal of Systems and Software paper. The EASE comparison found few-shot learning reached 95% balanced accuracy, 98% precision, and 78% recall."
+  papers:
+    - title: "Detecting Malicious Source Code in PyPI Packages with LLMs: Does RAG Come in Handy?"
+      venue: "EASE 2025"
+      url: "https://doi.org/10.1145/3756681.3757042"
+      abstract: "Malicious software packages in open-source ecosystems, such as PyPI, pose growing security risks. Unlike traditional vulnerabilities, these packages are intentionally designed to deceive users, making detection challenging due to evolving attack methods and the lack of structured datasets. In this work, we empirically evaluate the effectiveness of Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and few-shot learning for detecting malicious source code. We fine-tune LLMs on curated datasets and integrate YARA rules, GitHub Security Advisories, and malicious code snippets with the aim of enhancing classification accuracy. We came across a counterintuitive outcome: While RAG is expected to boost up the prediction performance, it fails in the performed evaluation, obtaining a mediocre accuracy. In contrast, few-shot learning is more effective as it significantly improves the detection of malicious code, achieving 97% accuracy and 95% balanced accuracy, outperforming traditional RAG approaches. Thus, future work should expand structured knowledge bases, refine retrieval models, and explore hybrid AI-driven cybersecurity solutions."
+    - title: "Many hands make light work: An LLM-based multi-agent system for detecting malicious PyPI packages"
+      venue: "Journal of Systems and Software, 2026"
+      url: "https://doi.org/10.1016/j.jss.2026.112792"
+      abstract: "Malicious code in open-source repositories such as PyPI poses a growing threat to software supply chains. Traditional rule-based tools often overlook the semantic patterns in source code that are crucial for identifying adversarial components. Large language models (LLMs) show promise for software analysis, yet their use in interpretable and modular security pipelines remains limited. This paper presents LAMPS, a multi-agent system that employs collaborative LLMs to detect malicious PyPI packages. The system consists of four role-specific agents for package retrieval, file extraction, classification, and verdict aggregation, coordinated through the CrewAI framework. A prototype combines a fine-tuned CodeBERT model for classification with LLaMA 3 agents for contextual reasoning. LAMPS has been evaluated on two complementary datasets: D1, a balanced collection of 6000 setup.py files, and D2, a realistic multi-file dataset with 1296 files and natural class imbalance. On D1, LAMPS achieves 97.7% accuracy, surpassing MPHunter and TD-IDF stacking models–two state-of-the-art approaches. On D2, it reaches 99.5% accuracy and 99.5% balanced accuracy, outperforming RAG-based approaches and fine-tuned single-agent baselines. McNemar’s test confirmed these improvements as highly significant. The results demonstrate the feasibility of distributed LLM reasoning for malicious code detection and highlight the benefits of modular multi-agent designs in software supply chain security."
+  links:
+    - label: Detector
+      url: "https://github.com/Motunrayo244/Multi-agent-Malicious-Package-Detector-MA-MPD-"
+    - label: Experiment report
+      url: "https://github.com/Motunrayo244/MA-MPD-experiment-report"
+    - label: EASE 2025
+      url: "https://doi.org/10.1145/3756681.3757042"
+    - label: Journal of Systems and Software
+      url: "https://doi.org/10.1016/j.jss.2026.112792"
+- slug: quality-by-prompt
+  title: Quality by Prompt
+  group: research
+  field: Data quality
+  symbol: "{ }"
+  caption: "From language to logic."
+  summary: "A fine-tuned LLaMA model that turns natural-language data quality requirements into Great Expectations validation rules."
+  papers:
+    - title: "Quality by Prompt: LLM-Powered Transformation of Data Quality Requirements Into Great Expectations"
+      venue: "SEAA 2025, Salerno"
+      url: "https://doi.org/10.1007/978-3-032-04190-6_9"
+      abstract: "Ensuring data quality is critical for reliable decision-making, analytics, and machine learning applications. Traditional data validation methods often depend on manually defining quality rules, a process that is time-consuming, error-prone, and difficult to scale. Great Expectations (GEs) is a widely adopted framework for data validation; however, crafting its rules manually introduces challenges in scalability, domain adaptability, and syntactic complexity. This study explores the use of Large Language Models (LLMs) to automate the conversion of natural language data quality requirements into structured GEs validation rules. We fine-tune the LLaMA-3.2-3B-bnb-4bit model using Low-Rank Adaptation (LoRA) on real-world datasets sourced from the telecommunications and IT sectors. To evaluate the effectiveness of this approach, we apply standard NLP metrics ROUGE, BLEU, METEOR, and BERTScore, alongside practical QA metrics such as rule completeness and manual effort reduction. Our results demonstrate that the fine-tuned LLM significantly outperforms generic models, generating rules with greater fluency, accuracy, and domain alignment."
+  links:
+    - label: Repository
+      url: "https://github.com/Motunrayo244/ge-app"
+    - label: SEAA paper
+      url: "https://doi.org/10.1007/978-3-032-04190-6_9"
+- slug: llm-multi-agent-systems
+  title: LLM-based multi-agent systems
+  group: research
+  field: Multi-agent systems
+  symbol: "✳"
+  caption: "Intelligence, together."
+  summary: "A mixed-method study of frameworks for building LLM-based multi-agent systems in software engineering, published in Empirical Software Engineering on 3 November 2026."
+  papers:
+    - title: "Developing LLM-based multi-agent systems in software engineering: a mixed-method experience report"
+      venue: "Empirical Software Engineering, 3 November 2026"
+      url: "https://link.springer.com/article/10.1007/s10664-026-10955-8"
+      abstract: "The proliferation of Generative Artificial Intelligence (Gen AI) powered by large language models (LLMs) has transformed the software development process, introducing new paradigms for code generation, debugging, testing, and maintenance. While early applications focused on leveraging single, independent LLMs to assist developers with isolated tasks, recent advances have shifted toward multi-agent systems (MAS) that orchestrate multiple LLM-based agents working collaboratively toward common objectives. Despite their promising potential, using MAS encompasses a set of challenges for developers who have to carefully select the right technology, devise proper coordination rules, and design specific roles for the involved agents. In this paper, by means of a mixed-method study, we provide a comprehensive overview of the existing tools and frameworks for implementing MAS in software engineering. We qualitatively analyzed eight representative LLM-based multi-agent frameworks selected from an initial pool of 20 publicly available frameworks, and quantitatively evaluated them using the Metagente software engineering scenario. The qualitative analysis reveals a trade-off between low-code frameworks, which emphasize ease of use through integrated agent creation, orchestration, and monitoring capabilities, and high-code frameworks, which provide greater flexibility and extensibility for advanced applications. The quantitative evaluation shows that all frameworks achieve comparable recommendation effectiveness, whereas their efficiency differs considerably: Semantic Kernel Chat incurs the highest token consumption, while AutoGPT exhibits the longest execution time. Finally, we provide a set of lessons learned and challenges that can help researchers and practitioners to select a suitable MAS framework according to their needs."
+  links:
+    - label: Empirical Software Engineering
+      url: "https://link.springer.com/article/10.1007/s10664-026-10955-8"
+- slug: water-network
+  title: Water-network monitoring
+  group: engineering
+  field: IoT
+  symbol: "⌁"
+  caption: "Connected by design."
+  summary: "A proposed IoT system for monitoring a water distribution network in an urban area."
+  links:
+    - label: Repository
+      url: "https://github.com/Motunrayo244/SE4IoT_water_distribution_network"
+- slug: gearbox-sound
+  title: Gearbox sound anomaly detection
+  group: research
+  field: Machine learning
+  symbol: "≋"
+  caption: "Listening for the unexpected."
+  summary: "Machine learning on sound from newly manufactured Volvo wheel loader gearboxes, presented on 10 September 2025 at ETFA 2025 in Porto."
+  papers:
+    - title: "Industry 4.0: Automating Gearbox Sound Anomaly Detection Using Machine Learning"
+      venue: "ETFA 2025, Porto"
+      url: "https://ieeexplore.ieee.org/abstract/document/11205565"
+      abstract: "The manufacturing sector increasingly relies on artificial intelligence (AI) to automate fault detection processes. However, existing methods for anomaly detection often struggle with data imbalances and high computational demands, limiting their scalability in industrial environments. This paper implements a system for efficient gearbox anomaly detection in manufacturing processes. We propose a machine learning-based automated system for detecting anomalies in the sound produced by gearbox systems in functional testing facilities. An evaluation of four machine learning (ML) algorithms was performed. Gaussian Mixture Model (GMM), Isolation Forest, K-Means, and One-Class Support Vector Machine (OC-SVM). The OC-SVM algorithm demonstrated the highest level of performance, achieving 88% specificity. This paper also discusses the development and on-site deployment of a fully functional solution that enables real-time fault detection. Our approach reinforces the feasibility of using sound analysis with semi-supervised learning to enhance anomaly detection in industrial settings, bridging the gap between AI-driven quality control and practical deployment. Future work will focus on improving the defective dataset and increasing the interpretability of the prediction model. These objectives are designed to promote improved transparency and trust in the system."
+  links:
+    - label: IEEE abstract
+      url: "https://ieeexplore.ieee.org/abstract/document/11205565"
+- slug: carla-autonomy
+  title: Carla autonomy
+  group: engineering
+  field: Autonomous systems
+  symbol: "◎"
+  caption: "Observe. Adapt. Move."
+  summary: "Repository for Carla autonomy using MAPE-K."
+  video: "https://www.youtube.com/embed/cC3kg6nT_1A"
+  description:
+    - "Carla autonomy is a Python controller for a vehicle in the CARLA simulator. It drives toward a chosen destination using the MAPE-K loop: Monitor, Analyse, Plan, Execute, and a shared Knowledge store."
+    - "The Monitor reads the vehicle’s position, rotation, and speed, and attaches a lane-invasion sensor, a lidar, and a camera. It also notes traffic lights that sit on the vehicle’s path. The Analyser slows and brakes for a red light within 30 metres, and it flags a collision risk when lidar points line up with another vehicle that could be reached in under two seconds. The Planner builds a waypoint route with CARLA’s global route planner. The Executor follows those waypoints, steering, throttling, and braking until the vehicle is within 5 metres of the destination. Knowledge holds the route, the sensor readings, and the status, which can be driving, arrived, crashed, or healing. If a collision risk is raised, the controller stops, steers away, and looks for a point behind the vehicle so it can leave the crash site."
+  links:
+    - label: Repository
+      url: "https://github.com/Motunrayo244/Carla-Autonomous-Using-Mape-k"
+    - label: Demo video
+      url: "https://youtu.be/cC3kg6nT_1A"
+- slug: website-usability
+  title: Website usability
+  group: engineering
+  field: Human experience
+  symbol: "↗"
+  caption: "Built around people."
+  summary: "Undergraduate thesis, “Evaluation of the Usability of Nigerian University Websites using Datamining algorithms.”"
+  links:
+    - label: Repository
+      url: "https://github.com/Motunrayo244/Website_Usability"

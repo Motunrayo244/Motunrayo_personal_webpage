@@ -1,0 +1,15 @@
+- when: "17 September 2024"
+  title: "Web scraping on your Computer"
+  kind: video
+  url: "https://www.youtube.com/watch?v=Q4nkyC-BZ1o"
+  embed: "https://www.youtube.com/embed/Q4nkyC-BZ1o"
+- when: "18 November 2023"
+  title: "Tales of an ML Engineer Wannabe: Network Analysis"
+  kind: article
+  url: "https://www.linkedin.com/in/motunrayoibiyo/recent-activity/articles/"
+  embed: ""
+- when: "17 January 2023"
+  title: "Data Engineering Zoomcamp Notebook"
+  kind: article
+  url: "https://www.linkedin.com/pulse/data-engineering-zoomcamp-notebook-motunrayo-ibiyo"
+  embed: ""

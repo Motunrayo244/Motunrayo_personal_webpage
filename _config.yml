@@ -1,0 +1,11 @@
+title: Motunrayo Ibiyo
+url: "https://motunrayo244.github.io"
+baseurl: "/Motunrayo_personal_webpage"
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - tests
+  - docs
+  - .superpowers

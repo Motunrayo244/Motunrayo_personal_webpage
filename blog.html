@@ -1,0 +1,21 @@
+---
+layout: default
+title: Notes
+permalink: /blog/
+---
+<section class="section page-head">
+  <p class="eyebrow">Notes & explorations</p>
+  <h1>Learning,<br><em>out loud.</em></h1>
+  <p class="intro">Ideas, experiments, and things I’ve learned along the way.</p>
+</section>
+<section class="section notes-list">
+  {% for post in site.data.blog %}
+  <a class="note-row" href="{{ post.url }}" target="_blank" rel="noopener noreferrer">
+    <span class="note-kind">{{ post.kind }}</span>
+    <h3>{{ post.title }}</h3>
+    <span class="note-date">{{ post.when }}</span>
+    <span>↗</span>
+  </a>
+  {% endfor %}
+</section>
+{% include contact.html %}
