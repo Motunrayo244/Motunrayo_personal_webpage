@@ -45,6 +45,8 @@
       url: "https://www.doria.fi/handle/10024/193115"
     - label: "EDISS journey"
       url: "https://www.master-ediss.eu/from-nigeria-to-europe-an-erasmus-mundus-scholars-journey-in-ediss/"
+    - label: "Year 1 testimonial"
+      url: "https://www.youtube.com/watch?v=Ewf7LjN07zg"
 - sort: "2025-06-20"
   when: "17–20 June 2025"
   title: "EASE paper, Istanbul"
@@ -69,6 +71,9 @@
   detail: "Built a customer-support chatbot with retrieval-augmented generation and maintained its knowledge base."
   project: ""
   kind: work
+  links:
+    - label: "Summer internship"
+      url: "https://www.youtube.com/watch?v=A4ceFg5su3g"
 - sort: "2024-08-31"
   when: "March 2024–August 2024"
   title: "Tutor, Åbo Akademi, Turku"
